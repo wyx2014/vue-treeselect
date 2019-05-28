@@ -30,7 +30,7 @@
         'vue-treeselect__multi-value-item-new': node.isNew,
       }
       const customValueLabelRenderer = instance.$scopedSlots['value-label']
-      const labelRenderer = customValueLabelRenderer ? customValueLabelRenderer({ node }) : node.label
+      const labelRenderer = customValueLabelRenderer ? customValueLabelRenderer({ node }) : node.label.split(':')[0];
 
       return (
         <div class="vue-treeselect__multi-value-item-container">

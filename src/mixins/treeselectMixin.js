@@ -1475,6 +1475,7 @@ export default {
       this.toggleClickOutsideEvent(false)
       this.resetSearchQuery()
       this.$emit('close', this.getValue(), this.getInstanceId())
+      window.scrollTo(0,0);
     },
 
     openMenu() {

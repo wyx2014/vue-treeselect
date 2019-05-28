@@ -183,7 +183,7 @@
 
         return (
           <label class={labelClassName}>
-            {node.label}
+            {node.label.split(':')[0]}
             {shouldShowCount && (
               <span class={countClassName}>({count})</span>
             )}
